@@ -1,0 +1,10 @@
+<resources>
+    <!-- App theme -->
+    <style name="Base.Theme.Assignment1_100748590" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- optional colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+    </style>
+    <style name="Theme.Assignment1_100748590" parent="Base.Theme.Assignment1_100748590" />
+</resources>

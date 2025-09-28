@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <include layout="@layout/calculator_header" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMI calculator"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Amount"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/emiLoanAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Loan Amount"
+                android:inputType="number"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annual Interest Rate"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/emiInterestRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Interest Rate (%)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenure (In Years)"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/emiTenure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Tenure Duration (In Years)"
+                android:inputType="number"
+                android:layout_marginBottom="15dp"
+                />
+
+            <Button
+                android:id="@+id/incomeExpenseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="70dp"
+                android:text="Next" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
